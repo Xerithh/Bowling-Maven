@@ -36,37 +36,37 @@ public class Tour {
         // Tours 1-9: règles standard
         if (lancer.estStrike()) {
             complet = true;
-            return false; // Strike: tour terminé
+            return false;
         }
         
         if (lancers.size() == 2) {
             complet = true;
-            return false; // 2 lancers effectués: tour terminé
+            return false;
         }
         
-        return true; // Premier lancer non-strike: le tour continue
+        return true;
     }
     
     private boolean gererDernierTour() {
         if (lancers.size() == 1) {
             if (lancers.get(0).estStrike()) {
-                return true; // Strike au 1er lancer: 2 lancers bonus
+                return true;
             }
-            return true; // Pas strike: on continue au 2e lancer
+            return true;
         }
         
         if (lancers.size() == 2) {
             // Si strike au 1er OU spare après 2 lancers: on continue
             if (lancers.get(0).estStrike() || estSpare()) {
-                return true; // Droit à un 3e lancer
+                return true;
             }
             complet = true;
-            return false; // Pas de bonus: tour fini
+            return false;
         }
         
         if (lancers.size() == 3) {
             complet = true;
-            return false; // 3 lancers effectués: tour terminé
+            return false;
         }
         
         return true;
@@ -110,7 +110,7 @@ public class Tour {
     
     public Lancer getLancer(int index) {
         if (index < 0 || index >= lancers.size()) {
-            return new Lancer(0); // Lancer par défaut si hors limites
+            return new Lancer(0);
         }
         return lancers.get(index);
     }
@@ -118,7 +118,7 @@ public class Tour {
     public int getScoreBase() {
         return lancers.stream()
             .mapToInt(Lancer::getQuillesAbattues)
-            .limit(2) // Ne compte que les 2 premiers lancers pour le score de base
+            .limit(2)
             .sum();
     }
     

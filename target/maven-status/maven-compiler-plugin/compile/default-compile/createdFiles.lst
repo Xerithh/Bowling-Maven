@@ -1,6 +1,8 @@
 bowling\Main.class
-bowling\Tour.class
+bowling\PartieMultiJoueurs.class
 bowling\BowlingConstants.class
 bowling\PartieMonoJoueur.class
 bowling\Lancer.class
 bowling\FrameType.class
+bowling\Tour.class
+bowling\IPartieMultiJoueurs.class

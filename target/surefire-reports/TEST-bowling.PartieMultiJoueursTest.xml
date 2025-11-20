@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="bowling.SinglePlayerGameTest" time="0.013" tests="7" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="bowling.PartieMultiJoueursTest" time="0.046" tests="20" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -59,11 +59,24 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="testOneStrike" classname="bowling.SinglePlayerGameTest" time="0.001"/>
-  <testcase name="unSpare" classname="bowling.SinglePlayerGameTest" time="0.001"/>
-  <testcase name="deuxStrikes" classname="bowling.SinglePlayerGameTest" time="0.001"/>
-  <testcase name="toutDansLaRigole" classname="bowling.SinglePlayerGameTest" time="0.001"/>
-  <testcase name="testPerfectGame" classname="bowling.SinglePlayerGameTest" time="0.002"/>
-  <testcase name="testTypicalGame" classname="bowling.SinglePlayerGameTest" time="0.002"/>
-  <testcase name="uneQuilleAChaqueLancer" classname="bowling.SinglePlayerGameTest" time="0.001"/>
+  <testcase name="testScoreAvecSpare" classname="bowling.PartieMultiJoueursTest" time="0.007"/>
+  <testcase name="testPartieTermineeAvecSpareAuDixiemeTour" classname="bowling.PartieMultiJoueursTest" time="0.004"/>
+  <testcase name="testEnregistreLancerSansPartieEnCours" classname="bowling.PartieMultiJoueursTest" time="0.002"/>
+  <testcase name="testDemarreNouvellePartieAvecDeuxJoueurs" classname="bowling.PartieMultiJoueursTest" time="0.002"/>
+  <testcase name="testTroisJoueursAlternance" classname="bowling.PartieMultiJoueursTest" time="0.001"/>
+  <testcase name="testEnregistreLancerDeuxLancersMemeTour" classname="bowling.PartieMultiJoueursTest" time="0.001"/>
+  <testcase name="testScoreAvecStrike" classname="bowling.PartieMultiJoueursTest" time="0.001"/>
+  <testcase name="testDemarreNouvellePartieAvecTableauNull" classname="bowling.PartieMultiJoueursTest" time="0.001"/>
+  <testcase name="testDemarreNouvellePartieAvecTableauVide" classname="bowling.PartieMultiJoueursTest" time="0.001"/>
+  <testcase name="testDemarreNouvellePartieAvecUnJoueur" classname="bowling.PartieMultiJoueursTest" time="0.002"/>
+  <testcase name="testPartieParfaite" classname="bowling.PartieMultiJoueursTest" time="0.001"/>
+  <testcase name="testEnregistreLancerStrike" classname="bowling.PartieMultiJoueursTest" time="0.001"/>
+  <testcase name="testPartieTermineeAvecUnJoueur" classname="bowling.PartieMultiJoueursTest" time="0.001"/>
+  <testcase name="testAlternanceDeuxJoueurs" classname="bowling.PartieMultiJoueursTest" time="0.001"/>
+  <testcase name="testScorePourJoueurInconnu" classname="bowling.PartieMultiJoueursTest" time="0.002"/>
+  <testcase name="testScorePourApresQuelquesLancers" classname="bowling.PartieMultiJoueursTest" time="0.001"/>
+  <testcase name="testPartieTermineeAvecStrikeAuDixiemeTour" classname="bowling.PartieMultiJoueursTest" time="0.002"/>
+  <testcase name="testExempleDuSujet" classname="bowling.PartieMultiJoueursTest" time="0.001"/>
+  <testcase name="testScorePourInitial" classname="bowling.PartieMultiJoueursTest" time="0.001"/>
+  <testcase name="testPartieTermineeAvecDeuxJoueurs" classname="bowling.PartieMultiJoueursTest" time="0.001"/>
 </testsuite>
